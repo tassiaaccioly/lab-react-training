@@ -1,0 +1,8 @@
+.greetings {
+  font-size: 18px;
+  width: 50%;
+  border: 2px solid black;
+  margin: 10px auto;
+  padding: 10px 5px;
+  text-align: center;
+}
