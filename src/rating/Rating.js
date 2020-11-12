@@ -20,7 +20,7 @@ function whatRate(props) {
 }
 
 function Rating(props) {
-  return <div className="ratings">{whatRate(props.children)}</div>;
+  return <p className="ratings">{whatRate(props.children)}</p>;
 }
 
 export default Rating;
