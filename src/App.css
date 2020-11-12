@@ -12,3 +12,16 @@
   align-items: center;
   justify-content: center;
 }
+
+.likebutton-container {
+  width: 50%;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.clickablepicture {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}

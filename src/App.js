@@ -6,6 +6,10 @@ import BoxColor from './boxcolor/BoxColor';
 import CreditCard from './creditcard/CreditCard';
 import Rating from './rating/Rating';
 import DriverCard from './drivercard/DriverCard';
+import LikeButton from './likebutton/LikeButton';
+import ClickablePicture from './clickablepicture/ClickablePicture';
+import Carousel from './carousel/Carousel';
+import Dice from './dice/dice';
 import './App.css';
 
 function App() {
@@ -28,19 +32,15 @@ function App() {
         birth={new Date('1988-05-11')}
         picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
-
       <h1>Greetings</h1>
       <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">François</Greetings>
-
       <h1>Random</h1>
       <Random min={1} max={6} />
       <Random min={1} max={100} />
-
       <h1>Box Color</h1>
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
-
       <h1>Credit Card</h1>
       <div className="creditcards-div">
         <CreditCard
@@ -74,7 +74,6 @@ function App() {
           color="white"
         />
       </div>
-
       <h1>Ratings</h1>
       <Rating>0</Rating>
       <Rating>1.49</Rating>
@@ -82,7 +81,6 @@ function App() {
       <Rating>3</Rating>
       <Rating>4</Rating>
       <Rating>5</Rating>
-
       <h1>Driver Card</h1>
       <DriverCard
         name="Travis Kalanick"
@@ -101,6 +99,31 @@ function App() {
           model: 'Audi A3',
           licensePlate: 'BE33ER',
         }}
+      />
+      <h1>Like Buttons</h1>
+      <div className="likebutton-container">
+        <LikeButton /> <LikeButton />
+      </div>
+
+      <h1>Clickable Picture</h1>
+      <div className="clickablepicture">
+        <ClickablePicture
+          img="/img/persons/maxence.png"
+          imgClicked="/img/persons/maxence-glasses.png"
+        />
+      </div>
+
+      <h1>Dice</h1>
+      <Dice />
+
+      <h1>Carousel</h1>
+      <Carousel
+        imgs={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg',
+        ]}
       />
     </div>
   );

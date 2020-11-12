@@ -10,6 +10,11 @@
   text-align: right;
 }
 
+.flag img {
+  width: 50px;
+  height: auto;
+}
+
 h4 {
   font-size: 25px;
   text-align: center;

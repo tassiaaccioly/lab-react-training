@@ -8,8 +8,8 @@ const langs = {
   fr: 'Bonjour',
 };
 
-function Greetings(props) {
-  function choseLang(props) {
+const Greetings = (props) => {
+  const choseLang = (props) => {
     let language = '';
     Object.values(props).map((key) => {
       if (langs[key]) {
@@ -17,13 +17,13 @@ function Greetings(props) {
       }
     });
     return language;
-  }
+  };
 
   return (
     <p className="greetings">
       {choseLang(props)}, {props.children}!
     </p>
   );
-}
+};
 
 export default Greetings;
