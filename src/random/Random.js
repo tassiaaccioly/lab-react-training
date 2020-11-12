@@ -3,7 +3,7 @@ import './Random.css';
 
 function Random(props) {
   function randomNum(props) {
-    return Math.floor(Math.random() * (props.max - props.min) + 1);
+    return Math.round(Math.random() * (props.max - props.min)) + props.min;
   }
 
   return (
