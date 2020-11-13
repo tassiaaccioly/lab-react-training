@@ -25,3 +25,10 @@
   display: flex;
   justify-content: center;
 }
+
+.carousel-div {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}

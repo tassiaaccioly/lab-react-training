@@ -21,7 +21,7 @@ const Greetings = (props) => {
 
   return (
     <p className="greetings">
-      {choseLang(props)}, {props.children}!
+      {choseLang(props)} {props.children}
     </p>
   );
 };

@@ -1,0 +1,29 @@
+.form {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form input {
+  font-size: 15px;
+  padding: 5px;
+  height: 23px;
+  margin: 10px 0 20px;
+}
+
+.form select {
+  font-size: 16px;
+  padding: 5px;
+  height: 30px;
+  margin: 10px 0 20px;
+}
+
+.form button {
+  width: 15%;
+  margin: 0 auto;
+  font-size: 15px;
+  padding: 5px;
+  background-color: cyan;
+}

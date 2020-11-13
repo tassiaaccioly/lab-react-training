@@ -12,8 +12,7 @@ const LikeButton = (props) => {
     setValue(value + 1);
     idx = Math.floor(Math.random() * 6);
     colors = colorsArr[idx];
-    color = colors;
-    setColor(color);
+    setColor((color = colors));
   };
 
   return (

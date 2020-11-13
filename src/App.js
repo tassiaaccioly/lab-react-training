@@ -10,6 +10,9 @@ import LikeButton from './likebutton/LikeButton';
 import ClickablePicture from './clickablepicture/ClickablePicture';
 import Carousel from './carousel/Carousel';
 import Dice from './dice/dice';
+import NumbersTable from './numberstable/NumbersTable';
+import Facebook from './facebook/Facebook';
+import SignupPage from './signuppage/SignupPage';
 import './App.css';
 
 function App() {
@@ -117,14 +120,27 @@ function App() {
       <Dice />
 
       <h1>Carousel</h1>
-      <Carousel
-        imgs={[
-          'https://randomuser.me/api/portraits/women/1.jpg',
-          'https://randomuser.me/api/portraits/men/1.jpg',
-          'https://randomuser.me/api/portraits/women/2.jpg',
-          'https://randomuser.me/api/portraits/men/2.jpg',
-        ]}
-      />
+      <div className="carousel-div">
+        <Carousel
+          imgs={[
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg',
+          ]}
+        />
+      </div>
+
+      <h1>Numbers Table</h1>
+      <NumbersTable limit={12} />
+
+      <h1>Facebook</h1>
+      <Facebook />
+
+      <h1>Sign Up Page</h1>
+      <div className="signup-div">
+        <SignupPage />
+      </div>
     </div>
   );
 }
